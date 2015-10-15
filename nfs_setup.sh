@@ -10,3 +10,4 @@ for mnt in "${mounts[@]}"; do
 done
 
 exec runsvdir /etc/sv
+/etc/sv/nfs/run
