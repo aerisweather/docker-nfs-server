@@ -11,6 +11,13 @@ docker run -d --name nfs --privileged cpuguy83/nfs-server /path/to/share /path/t
 docker run -d --name nfs-client --privileged --link nfs:nfs cpuguy83/nfs-client /path/on/nfs/server:/path/on/client
 ``` 
 
+Troubleshooting
+---------------
+
+1. `modprobe nfs` to ensure the kernel module is loaded
+1. `service nfs start` to ensure nfs services are running on the host
+
+
 More Info
 =========
 
